@@ -2290,8 +2290,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='2300' minheight='2300' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='36' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='38' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone forceUpdate='true' h='15755' id='3' type-v2='text' w='101025' x='-586' y='-391'>
                   <formatted-text>
                     <run bold='true' fontcolor='#000000' fontsize='26'>Human Resources Analytics Dashboard</run>
@@ -2715,7 +2715,18 @@
             <bucket-selection />
           </highlight>
         </viewpoint>
-        <viewpoint name='Employees Travelling' />
+        <viewpoint name='Employees Travelling'>
+          <selection-collection>
+            <node-selection select-tuples='false'>
+              <oriented-node-reference orientation='horizontal'>
+                <node-reference>
+                  <axis>[federated.10wt5k60pf85uq18o07cv1cn0aip].[sum:Employee Count:qk]</axis>
+                </node-reference>
+                <page-reference />
+              </oriented-node-reference>
+            </node-selection>
+          </selection-collection>
+        </viewpoint>
         <viewpoint name='Number of Employees' />
         <viewpoint name='Number of employees per Department' />
         <viewpoint name='Number of employees per age group'>
